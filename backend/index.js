@@ -19,7 +19,10 @@ app.use(
   express.urlencoded({ extended: true })
 );
 app.use(express.json())
+// link for calling creat user from frontend
 app.use('/api',require('./Routes/CreatUser'))
+// link for displaying data from frontend
+app.use('/api',require('./Routes/DisplayData'))
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })

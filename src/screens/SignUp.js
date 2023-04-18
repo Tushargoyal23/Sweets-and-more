@@ -19,7 +19,7 @@ export default function SignUp() {
     if(!json.success){
       alert("enter valid credentials")
     }else{
-      navigate("/")
+       navigate("/")
     }
   }
   const onchange=(event)=>{
